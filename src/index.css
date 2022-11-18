@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary: hsl(190, 68%, 53%);
+  --primary-dark: hsl(190, 68%, 50%);
+  --secondary: hsl(25, 99%, 63%);
+  --secondary-dark: hsl(25, 99%, 60%);
+  --white: #f5f9fa;
+  --white2: #ebf3f5;
+  --gray: #e1e4e5;
+  --gray2: #c0c6c9;
+  --gray3: #4b4c4d;
+  --black: #323333;
+  --black2: #2a2b2b;
+}
+
+html {
+  background: linear-gradient(var(--white), var(--white2));
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+}

@@ -1,6 +1,12 @@
+import estilos from './Pie.module.css'
+
 function Pie() {
     return ( 
-        <p>Esto es el pie de página</p>
+        <div className={estilos.contenedor}>
+        <footer>
+            <small>Developed and designed by CYV. ©2022. All rights reserved.</small>
+        </footer>
+        </div>
      );
 };
 

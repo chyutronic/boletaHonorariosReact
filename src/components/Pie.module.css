@@ -1,0 +1,3 @@
+.contenedor {
+  @apply absolute bottom-0 bg-gray-400 w-screen text-center text-white;
+}
