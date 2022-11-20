@@ -1,0 +1,19 @@
+.ventanaModal {
+  @apply fixed top-0 w-screen h-screen left-0 bg-gray-800/70 flex justify-center place-items-center;
+}
+
+.contenedorModal {
+  @apply w-4/5 h-2/4 bg-slate-100 relative border border-blue-700 rounded-lg drop-shadow-md px-4 py-4;
+}
+
+.titulo {
+  @apply text-blue-700 font-bold;
+}
+
+.botonCerrar {
+  @apply font-bold text-red-600 bg-slate-300 w-7 h-7 rounded-full hover:bg-slate-400;
+}
+
+.nav {
+  @apply flex justify-between mb-3;
+}
