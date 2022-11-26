@@ -1,13 +1,13 @@
 .titulo {
-  @apply text-lg p-3 text-white;
+  @apply text-lg p-3 text-white md:text-2xl;
 }
 
 .contenedorTitulo {
-  @apply bg-gray-400 border border-blue-800 my-4 max-w-xs;
+  @apply bg-gray-400 border border-blue-800 my-4;
 }
 
 .contenedor {
-  @apply h-32 w-64 p-1 my-6 flex flex-col items-center justify-center;
+  @apply h-32 w-64 p-1 my-6 flex flex-col items-center justify-center md:w-96;
 }
 
 .contenedorImagen {
@@ -15,5 +15,5 @@
 }
 
 .imagenes {
-  @apply h-12 w-12;
+  @apply h-12 w-12 md:h-16 md:w-16;
 }
