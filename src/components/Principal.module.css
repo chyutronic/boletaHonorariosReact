@@ -43,7 +43,7 @@
 }
 
 .contenedorBoleta {
-  @apply grid grid-cols-2 my-6 px-8;
+  @apply grid grid-cols-2 my-6 px-2;
 }
 
 .textoBoleta {

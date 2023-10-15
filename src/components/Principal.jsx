@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
 import estilos from "./Principal.module.css";
 import {
@@ -6,6 +6,12 @@ import {
   valorBruto,
   valorLiquido,
   respuesta,
+  retencion2023,
+  retencion2024,
+  retencion2025,
+  retencion2026,
+  retencion2027,
+  retencion2028,
 } from "../negocio/calculadora";
 
 function Principal() {
@@ -16,6 +22,8 @@ function Principal() {
   });
 
   const [modal, setModal] = useState(false);
+
+  const [retencion, setRetencion] = useState(0);
 
   const { ano, tipoMonto, monto } = form;
 
@@ -28,20 +36,24 @@ function Principal() {
     location.reload();
   };
 
-  const opcionesDeAno = [
-    "AÑO",
-    "2022",
-    "2023",
-    "2024",
-    "2025",
-    "2026",
-    "2027",
-    "2028",
-  ];
+  const opcionesDeAno = ["AÑO", "2023", "2024", "2025", "2026", "2027", "2028"];
   const opcionesDeMonto = ["BRUTO / LIQUIDO", "BRUTO", "LIQUIDO"];
 
   const handleForm = (e) => {
     e.preventDefault();
+    if (ano === "2023") {
+      setRetencion(retencion2023);
+    } else if (ano === "2024") {
+      setRetencion(retencion2024);
+    } else if (ano === "2025") {
+      setRetencion(retencion2025);
+    } else if (ano === "2026") {
+      setRetencion(retencion2026);
+    } else if (ano === "2027") {
+      setRetencion(retencion2027);
+    } else if (ano === "2028") {
+      setRetencion(retencion2028);
+    }
   };
 
   return (
@@ -130,7 +142,9 @@ function Principal() {
             <p className={estilos.textoBoleta}>
               Total <strong>BRUTO</strong>:
             </p>
-            <p className={estilos.textoBoleta}>13% impto. retenido: </p>
+            <p className={estilos.textoBoleta}>
+              {retencion}% impto. retenido:{" "}
+            </p>
             <p className={estilos.textoBoleta}>
               Total <strong>LÍQUIDO</strong>:
             </p>

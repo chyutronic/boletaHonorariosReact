@@ -11,13 +11,13 @@ export function respuesta(ano, tipoMonto) {
 
 export var valorLiquido;
 export var valorBruto;
-const retencion2022 = 12.25;
-const retencion2023 = 13;
-const retencion2024 = 13.75;
-const retencion2025 = 14.5;
-const retencion2026 = 15.25;
-const retencion2027 = 16;
-const retencion2028 = 17;
+export const retencion2022 = 12.25;
+export const retencion2023 = 13;
+export const retencion2024 = 13.75;
+export const retencion2025 = 14.5;
+export const retencion2026 = 15.25;
+export const retencion2027 = 16;
+export const retencion2028 = 17;
 
 // arreglo que contiene las respuestas con combinaciones posibles: 7*2=14 combinaciones posibles
 
