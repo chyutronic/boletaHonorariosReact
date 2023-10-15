@@ -1,9 +1,9 @@
 .titulo {
-  @apply text-lg p-3 text-white md:text-2xl;
+  @apply text-lg px-3 py-1 text-blue-600 font-bold md:text-2xl;
 }
 
 .contenedorTitulo {
-  @apply bg-gray-400 border border-blue-800 my-4;
+  @apply border-b border-blue-800 my-4;
 }
 
 .contenedor {

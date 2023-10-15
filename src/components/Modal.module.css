@@ -7,7 +7,7 @@
 }
 
 .titulo {
-  @apply text-blue-700 font-bold;
+  @apply text-blue-700 font-bold mx-auto;
 }
 
 .botonCerrar {
@@ -15,5 +15,5 @@
 }
 
 .nav {
-  @apply flex justify-between mb-3;
+  @apply flex justify-between mb-4;
 }

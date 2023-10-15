@@ -1,33 +1,61 @@
 .contenedor {
-  @apply p-1 flex flex-col items-center justify-center border border-blue-800 rounded-xl max-w-xs bg-slate-200 md:max-w-md;
+  @apply p-1 flex flex-col items-center justify-center gap-5 max-w-xs md:max-w-md;
+}
+
+.contenedorNombreInput {
+  @apply w-full;
+}
+
+.contenedorAno {
+  @apply border border-blue-800 rounded-xl w-full;
+}
+
+.contenedorBrutoLiquido {
+  @apply border border-blue-800 rounded-xl w-full;
+}
+
+.contenedorMonto {
+  @apply border border-blue-800 rounded-xl w-full;
 }
 
 .label {
-  @apply block uppercase text-xs font-bold mb-6 text-gray-700 px-2 py-2 text-center md:text-base;
+  @apply block uppercase text-xs font-semibold text-blue-700 px-2 py-2 text-left md:text-base;
 }
 
 .input {
-  @apply w-full border rounded-md h-lg my-2 text-center;
+  @apply w-full border h-lg text-center rounded-xl;
 }
 
 .botones {
-  @apply flex justify-between my-7 md:text-xl;
+  @apply flex flex-col md:text-xl w-full;
 }
 
 .botonCalcular {
-  @apply bg-blue-500 px-2 py-1 border border-blue-800 rounded-xl text-white;
+  @apply bg-blue-500 px-2 border border-blue-800 rounded-xl text-white md:hover:bg-blue-900 duration-500;
+}
+
+.contenedorBotonReiniciar {
+  @apply w-full flex justify-center;
 }
 
 .botonReiniciar {
-  @apply bg-red-500 px-2 py-1 border border-blue-800 rounded-xl text-white;
+  @apply px-2 border border-slate-800 rounded-full text-slate-800 mt-10 md:hover:bg-slate-400 duration-500;
+}
+
+.contenedorBoleta {
+  @apply grid grid-cols-2 my-6 px-8;
+}
+
+.textoBoleta {
+  @apply text-right;
 }
 
 .textoResultado {
-  @apply text-center my-7;
+  @apply flex flex-col gap-1;
 }
 
 .resultado {
-  @apply text-center bg-green-200 py-2 mb-10;
+  @apply pl-3 text-left bg-blue-200;
 }
 
 .pie {
