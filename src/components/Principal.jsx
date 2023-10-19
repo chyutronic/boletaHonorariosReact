@@ -120,9 +120,17 @@ function Principal() {
           <button
             className={estilos.botonCalcular}
             onClick={() => {
-              respuesta(ano, tipoMonto);
-              calcular(monto);
-              setModal(!modal);
+              if (
+                ano === "ELIGE UNA OPCION" ||
+                tipoMonto === "ELIGE UNA OPCION" ||
+                monto <= 0
+              ) {
+                alert("Debes completar correctamente todos los datos!");
+              } else {
+                respuesta(ano, tipoMonto);
+                calcular(monto);
+                setModal(!modal);
+              }
             }}
           >
             CALCULAR

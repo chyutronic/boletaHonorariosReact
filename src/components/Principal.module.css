@@ -31,7 +31,7 @@
 }
 
 .botonCalcular {
-  @apply bg-blue-500 px-2 border border-blue-800 rounded-xl text-white md:hover:bg-blue-900 duration-500;
+  @apply bg-blue-500 px-2 h-lg border border-blue-800 rounded-xl text-white md:hover:bg-blue-900 duration-500;
 }
 
 .contenedorBotonReiniciar {
